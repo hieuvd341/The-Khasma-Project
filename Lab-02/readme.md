@@ -52,7 +52,7 @@ exit
 Ở đây thì địa chỉ ip đã là `10.61.7.10`, tức là IP đã được set thành công.
 
 - **[OPTIONAL]**
-- 
+
 Ở đây thì tôi recommend mọi người cấu hình mạng bridge và ssh từ ngoài vào. 
 
 Sử dụng 4 terminal cho 4 máy `SEED`, `Attacker`, `Server` và `User`.
