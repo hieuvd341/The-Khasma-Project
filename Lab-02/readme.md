@@ -68,6 +68,7 @@ Như thế thì chúng ta sẽ không bị loạn trong việc phân biệt term
 ![alt text](image-7.png)
 
 **Để có thông tin về các bảng ánh xạ ARP thì ta cần phải ping các máy cho nhau.**
+
 Cụ thể là ở máy User, ta thực hiện lệnh:
 
 ```bash
