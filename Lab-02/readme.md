@@ -52,9 +52,13 @@ exit
 Ở đây thì địa chỉ ip đã là `10.61.7.10`, tức là IP đã được set thành công.
 
 - **[OPTIONAL]**
+- 
 Ở đây thì tôi recommend mọi người cấu hình mạng bridge và ssh từ ngoài vào. 
+
 Sử dụng 4 terminal cho 4 máy `SEED`, `Attacker`, `Server` và `User`.
+
 Sau đó dùng tính năng đổi tên tab của terminal. 
+
 Như thế thì chúng ta sẽ không bị loạn trong việc phân biệt terminal này của máy nào.
 
 ![alt text](image-12.png)
@@ -202,7 +206,10 @@ sendp(pkt)
 
 ![alt text](image-14.png)
 
-- Quan sát lưu lượng trên WireShark. Khúc này nhớ bật WireShark không quên.
+- Quan sát lưu lượng trên WireShark. 
+
+*Khúc này nhớ bật WireShark không quên.*
+
 Ở bước này ta cần phân biệt card mạng nào là của docker nào giữa một rừng card mạng ảo.
 
 ![alt text](image-15.png)
@@ -492,8 +499,11 @@ pkt = sniff(iface='eth0', filter='tcp',prn=spoof_pkt)
 ```
 
 Script này được chạy trên máy Attacker, mục đích của nó là bắt các gói tin và sửa nội dung các gói tin đó.
+
 Các gói tin gửi từ User đến Server sẽ bị sửa data, cụ thể là viết thường sửa thành viết hoa.
+
 Ngược lại các gói tin gửi từ Server về User thì không can thiệp.
+
 Chương trình này minh họa kịch bản tấn công khi gửi gói tin từ Server đến User.
 
 - `scenario3.py`
